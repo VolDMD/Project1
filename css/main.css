@@ -7,8 +7,12 @@ p {
   margin: 0;
 }
 
+p, a {
+  display: block;
+}
+
 .body {
-  background: url("../imeges/bg-0-1x.jpg");
+  background: url("../images/bg-0-1x.jpg");
 }
 
 .container {
@@ -140,8 +144,10 @@ p {
   right: 0;
 }
 
-/* .q{
-
-    position: relative;
+.pages__bloc {
+  display: flex;
 }
- *//*# sourceMappingURL=main.css.map */
+
+.pages {
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

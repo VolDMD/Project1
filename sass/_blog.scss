@@ -7,13 +7,12 @@ p {
   margin: 0;
 }
 
-
-
-
-
+p,a{
+    display: block;
+}
 
 .body{
-    background: url('../imeges/bg-0-1x.jpg');
+    background: url('../images/bg-0-1x.jpg');
 }
 .container {
     max-width: 100%;
@@ -65,10 +64,10 @@ margin-bottom: 40px;
 
 .img{
     border-radius: 12px;
-
     top:0px;
     left:0px;
 }
+
 .text{
 
  padding-left: 60px;
@@ -134,8 +133,10 @@ top: 0px;
      right: 0;
     
 }
-/* .q{
 
-    position: relative;
+.pages__bloc{
+    display: flex;
 }
- */
+.pages{
+    justify-content: center;
+}

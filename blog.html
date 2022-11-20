@@ -20,12 +20,26 @@
 <body class="body container" >
     
     <h1 class="top">Blog</h1>
+<div>Лінія</div>
+
        <div class="blog__one" >
-                  <img  src="./imeges/Foto1-1x.jpg"
+        <picture>
+          <source srcset="./images/Blog-img1-1x.jpg 1x ,
+                          ./images/Blog-img1-2x.jpg 2x"
+                  media="(min-width: 1280px)"/>
+          <source srcset="./images/Blog-img1-tab-1x.jpg 1x ,
+                          ./images/Blog-img1-tab-2x.jpg 2x"
+               media="(min-width: 768px)"/>
+          <source srcset="./images/Blog-img1-mob-1x.jpg 1x ,
+                          ./images/Blog-img1-mob-2x.jpg 2x"
+                   media="(max-width: 768px)" />
+          <img  src="./images/Blog-img1-1x.jpg"
                   alt="Gaming Headset"
                   width="387"
                   height="364"
                   class="img" >
+        </picture>
+
                 <div class="text">
                     <h2 class="text__title">Guide to Picking The Right Gaming Headset</h2>
                 <div class="text__author">
@@ -39,12 +53,23 @@
             </div>
             
            <div class="blog__one">
-              <img  src="./imeges/Foto2-1x.jpg"
-               alt="Relevant to Gaming"
-               width="387"
-               height="364"
-               class="img" >
-              <div class="text">
+            <picture>
+              <source srcset="./images/Blog-img2-1x.jpg 1x ,
+                              ./images/Blog-img2-2x.jpg 2x"
+                      media="(min-width: 1200px)">
+              <source srcset="./images/Blog-img2-tab-1x.jpg 1x ,
+                              ./images/Blog-img2-tab-2x.jpg 2x"
+                   media="(min-width: 768px)">
+              <source srcset="./images/Blog-img2-mob-1x.jpg 1x ,
+                              ./images/Blog-img2-mob-2x.jpg 2x"
+                       media="(max-width: 768px)" >
+              <img  src="./images/Blog-img2-1x.jpg"
+                      alt="Gaming Headset"
+                      width="387"
+                      height="364"
+                      class="img" >
+            </picture>
+            <div class="text">
                   <h2 class="text__title">Mic Monitoring: What Is It and How It Is Relevant to Gaming</h2>
               <div class="text__author">
                 <p class="author">By Gab L </p>
@@ -57,11 +82,23 @@
              </div>
              
           <div class="blog__one">
-            <img  src="./imeges/Foto3-1x.jpg"
-             alt="Gaming Mouse"
-             width="387"
-             height="364"
-             class="img" >
+            <picture>
+              <source srcset="./images/Blog-img3-1x.jpg 1x ,
+                              ./images/Blog-img3-2x.jpg 2x"
+                      media="(min-width: 1200px)">
+              <source srcset="./images/Blog-img3-tab-1x.jpg 1x ,
+                              ./images/Blog-img3-tab-2x.jpg 2x"
+                   media="(min-width: 768px)">
+              <source srcset="./images/Blog-img3-mob-1x.jpg 1x ,
+                              ./images/Blog-img3-mob-2x.jpg 2x"
+                       media="(max-width: 768px)" >
+              <img  src="./images/Blog-img3-1x.jpg"
+                      alt="Gaming Headset"
+                      width="387"
+                      height="364"
+                      class="img" >
+            </picture>
+    
             <div class="text">
                 <h2 class="text__title">How to Choose the Right Gaming Mouse</h2>
             <div class="text__author">
@@ -72,8 +109,14 @@
               Here’s what you need to know about grip styles, types of gaming mice, technical specs, and more, before purchasing a new gaming mouse ...</p>
             <a class="link" href="">Learn more</a>
               </div>
-            </div>
 
+              
+
+            </div>
+            
+            <div class="pages__bloc" ><svg class="pages" width="104" height="16">
+              <use class="pages" href="./images/icons.svg#icon-Pages-1"></use>
+            </svg></div>
         
         
         
