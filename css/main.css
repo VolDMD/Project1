@@ -1,11 +1,20 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
 .body {
   background: url("../imeges/bg-0-1x.jpg");
 }
 
 .container {
   max-width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   /* padding-bottom: 94px; */
 }
@@ -37,29 +46,40 @@
 }
 
 .blog__one {
-  border: 50px;
-  border-color: red;
-}
-
-.ul {
-  padding: 0;
-}
-
-.li {
-  /* position: relative; */
+  outline: 1px solid red;
   display: flex;
+  max-width: 100%;
+  /*  padding-left: 15px;
+   padding-right: 15px; */
+  margin: 0 auto;
+  margin-bottom: 40px;
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  .blog__one {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1028px) {
+  .blog__one {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog__one {
+    width: 1200px;
+  }
 }
 
 .img {
-  /* position:absolute; */
+  border-radius: 12px;
   top: 0px;
   left: 0px;
 }
 
 .text {
-  /*    left: 158px; */
-  padding-left: 121px;
-  max-width: 693px;
+  padding-left: 60px;
+  /* max-width: 693px; */
 }
 
 .text__title {
@@ -67,14 +87,18 @@
   font-style: normal;
   font-weight: 600;
   font-size: 56px;
-  line-height: 56px;
+  line-height: 1;
   color: #FFFFFF;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  padding-bottom: 24px;
+  width: 692px;
+  top: 0px;
 }
 
 .text__author {
   display: flex;
-  gap: 96px;
+  justify-content: space-between;
+  padding-bottom: 24px;
 }
 
 .author {
@@ -82,7 +106,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 1;
   color: #FFFFFF;
 }
 
@@ -91,7 +115,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 1;
   color: #8D9289;
 }
 
@@ -100,8 +124,9 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   color: #FFFFFF;
+  padding-bottom: 16px;
 }
 
 .link {
@@ -109,6 +134,14 @@
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 1;
   color: #86E543;
-}/*# sourceMappingURL=main.css.map */
+  position: absolute;
+  right: 0;
+}
+
+/* .q{
+
+    position: relative;
+}
+ *//*# sourceMappingURL=main.css.map */
