@@ -20,12 +20,17 @@ img {
 }
 
 .body {
-  background: url("../images/bg-0-1x.jpg");
+  background: url("../images/bg-mobile-1x.jpg");
+}
+@media screen and (min-width: 768px) {
+  .body {
+    background: url("../images/bg-tablet-1x.jpg");
+  }
 }
 
 .container {
-  padding-left: 17px;
-  padding-right: 17px;
+  /* padding-left: 17px;
+  padding-right: 17px; */
   margin: 0 auto;
   /* padding-bottom: 94px; */
 }
@@ -53,12 +58,16 @@ img {
 .top {
   margin-top: 120px;
   margin-bottom: 8px;
+  width: 49px;
+  height: 28px;
+  left: 16px;
+  top: 144px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 56px;
-  line-height: 1.18;
-  color: #ffffff;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
 }
 
 .blog__one {
@@ -66,19 +75,59 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  height: 560px;
+  max-width: 320px;
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  .blog__one {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .blog__one {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .blog__one {
+    width: 1200px;
+  }
 }
 
 .img {
-  border-radius: 12px;
+  /*  width: 322px;
+   height: 180px; */
+  padding: 0 auto;
 }
 .img--first {
   display: none;
+}
+@media screen and (min-width: 400px) {
+  .img--second {
+    display: block;
+    width: 420px;
+    height: 228px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .img--second {
+    /* display: block;
+    width: 387px;
+    height: 228px; */
+    width: 480px;
+    height: auto;
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .img--second {
     display: block;
     width: 387px;
     height: 228px;
+    border-radius: 12px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -97,15 +146,83 @@ img {
 }
 
 .text__title {
+  /*   font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1;
+    color: #ffffff;
+    padding-bottom: 54px; */
+  /* width: 288px;
+  height: 56px;
+  left: 16px;
+  top: 0px; */
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1;
-  color: #ffffff;
-  padding-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  .text__title {
+    width: 288px;
+    height: 56px;
+    left: 16px;
+    top: 0px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 23px;
+    padding-bottom: 16px;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text__title {
+    width: 688px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1;
+    color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text__title {
+    width: 692px;
+    height: 112px;
+    left: 508px;
+    top: 0px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1;
+    color: #FFFFFF;
+  }
 }
 
+.text__author--main {
+  /*      padding-top: 30px; */
+}
+@media screen and (min-width: 480px) {
+  .text__author--main {
+    justify-content: space-between;
+    padding-top: 54px;
+  }
+}
 @media screen and (min-width: 768px) {
   .text__author--main {
     display: flex;
@@ -113,6 +230,18 @@ img {
   }
 }
 
+.text__author {
+  /*   width: 248px;
+  height: 16px;
+  left: 16px;
+  top: 260px; */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: #FFFFFF;
+}
 @media screen and (min-width: 1280px) {
   .text__author {
     display: flex;
@@ -128,33 +257,110 @@ img {
   font-size: 24px;
   line-height: 1;
   color: #ffffff;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 768px) {
+  .author {
+    width: 248px;
+    height: 48px;
+    left: 427px;
+    top: 228px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding-top: 80px;
+  }
 }
 
 .date {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1;
-  color: #8d9289;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: #8D9289;
+}
+@media screen and (min-width: 768px) {
+  .date {
+    width: 261px;
+    height: 48px;
+    left: 427px;
+    top: 308px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    padding-top: 66px;
+  }
 }
 
 .text__item {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17;
-  color: #ffffff;
-  padding-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #FFFFFF;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .text__item {
+    width: 688px;
+    height: 112px;
+    left: 0px;
+    top: 372px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.17;
+    padding-top: 16px;
+  }
 }
 
 .link {
+  /* width: 82px;
+  height: 16px;
+  left: 222px;
+  top: 457px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1;
-  color: #86e543;
+  font-size: 16px;
+  line-height: 100%;
+  color: #86E543;
   text-align: right;
-}/*# sourceMappingURL=main.css.map */
+  padding-right: 10px;
+}
+@media screen and (min-width: 480px) {
+  .link {
+    padding-top: 6px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    padding-top: 16px;
+  }
+}
+
+/* .pages {
+  text-align: center;
+} *//*# sourceMappingURL=main.css.map */
