@@ -22,9 +22,14 @@ img {
 .body {
   background: url("../images/bg-mobile-1x.jpg");
   @media screen and(min-width:768px) {
+    background-color: #ffffff;
    background: url("../images/bg-tablet-1x.jpg");
   }
+  @media screen and(min-width:1280x) {
+    background: url("../images/bg-0-1x.jpg");
+   }
 }
+
 .container {
   //   max-width: 100%;
   /* padding-left: 17px;
@@ -55,14 +60,27 @@ img {
   height: 28px;
   left: 16px;
   top: 144px;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-
   color: #FFFFFF;
+  @media screen and(min-width:768px) {
+    padding-left: 59px;
+    padding-bottom: 4px;
+    width: 114px;
+    height: 66px;
+    left: 99px;
+    top: 256px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+    color: #FFFFFF;
+  }
 }
 
 .blog__one {
@@ -76,15 +94,20 @@ img {
      @media screen and(min-width:480px) {
        max-width: 480px;
      }
-     @media screen and(min-width:767px) {
+     @media screen and(min-width:768px) {
        max-width: 768px;
-     }
+       margin: 0;
+       padding: 0;
+      }
      @media screen and(min-width:1280px) {
        width: 1200px;
      }
      position: relative;
 }
+.img--second {
 
+
+}
 .img {
   
  /*  width: 322px;
@@ -114,7 +137,7 @@ img {
       width: 480px;
       height: auto;
       display: block;
-      
+      object-fit: contain;
 
      
     }
@@ -126,9 +149,16 @@ img {
       width: 387px;
       height: 228px;
       border-radius: 12px;
+      padding: 0
+      ;
     }
   }
-
+@media screen and (min-width: 768px) {
+/*   display: block; */
+  width: 387px;
+  height: 228px;
+  border-radius: 12px;
+  }
   @media screen and (min-width: 1280px) {
     &--first {
       display: block;
@@ -190,16 +220,13 @@ img {
     height: 112px;
     left: 0px;
     top: 0px;
-
+    
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1;
-    
-
-
-color: #FFFFFF;
+    color: #FFFFFF;
   }
   @media screen and (min-width: 1280px) {
     width: 692px;
@@ -272,6 +299,7 @@ color: #FFFFFF;
     line-height: 100%;
     color: #FFFFFF;
     padding-top: 80px;
+    padding-left: 40px;
 }
 }
 .date {
@@ -297,10 +325,8 @@ color: #FFFFFF;
     line-height: 1;
     padding-top: 66px;
   }
-
-
-
 }
+
 .text__item {
 
   font-family: 'Roboto';
@@ -355,9 +381,4 @@ color: #FFFFFF;
     padding-top: 16px;
 }
 }
-.pages__bloc {
- 
-}
-/* .pages {
-  text-align: center;
-} */
+
