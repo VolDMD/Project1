@@ -90,17 +90,16 @@ img {
 }
 
 .blog__one {
-  outline: 1px solid red;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
   height: 560px;
-  max-width: 320px;
   position: relative;
 }
 @media screen and (min-width: 480px) {
   .blog__one {
     max-width: 480px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -117,37 +116,39 @@ img {
   }
 }
 
-.img {
-  /*  width: 322px;
-   height: 180px; */
+.img1 {
   padding: 0 auto;
+  border-radius: 12px;
 }
-.img--first {
+.img1--first {
   display: none;
 }
-@media screen and (min-width: 400px) {
-  .img--second {
+@media screen and (min-width: 1280px) {
+  .img1--first {
     display: block;
-    width: 420px;
-    height: 228px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 367px;
+    height: auto;
+    padding-top: 48px;
   }
 }
+
+.img2 {
+  padding: 0 auto;
+}
+.img2--Second {
+  display: block;
+}
 @media screen and (min-width: 480px) {
-  .img--second {
-    /* display: block;
-    width: 387px;
-    height: 228px; */
-    width: 480px;
-    height: auto;
+  .img2--second {
     display: block;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 480px;
+    height: 228px;
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .img--second {
+  .img2--second {
     display: block;
     width: 387px;
     height: 228px;
@@ -156,21 +157,14 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .img {
-    /*   display: block; */
+  .img2 {
     width: 387px;
     height: 228px;
     border-radius: 12px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .img--first {
-    display: block;
-    width: 367px;
-    height: auto;
-    padding-top: 48px;
-  }
-  .img--second {
+  .img2--second {
     display: none;
   }
 }
@@ -180,17 +174,6 @@ img {
 }
 
 .text__title {
-  /*   font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1;
-    color: #ffffff;
-    padding-bottom: 54px; */
-  /* width: 288px;
-  height: 56px;
-  left: 16px;
-  top: 0px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -250,9 +233,6 @@ img {
   }
 }
 
-.text__author--main {
-  /*      padding-top: 30px; */
-}
 @media screen and (min-width: 480px) {
   .text__author--main {
     justify-content: space-between;
@@ -274,10 +254,6 @@ img {
 }
 
 .text__author {
-  /*   width: 248px;
-  height: 16px;
-  left: 16px;
-  top: 260px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -426,10 +402,6 @@ img {
 }
 
 .link {
-  /* width: 82px;
-  height: 16px;
-  left: 222px;
-  top: 457px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -465,5 +437,76 @@ img {
     color: #86E543;
     text-align: right;
     padding-top: 54px;
+  }
+}
+
+.pagination__list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination__item {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: pag-anime;
+          animation-name: pag-anime;
+}
+
+.pagination__item:hover {
+  cursor: pointer;
+}
+
+.pagination__item:nth-child(1) {
+  width: 40px;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.pagination__item:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.pagination__item:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes pag-anime {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #86e543;
+  }
+  40% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@keyframes pag-anime {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #86e543;
+  }
+  40% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
   }
 }/*# sourceMappingURL=main.css.map */

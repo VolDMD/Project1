@@ -78,16 +78,16 @@ img {
 }
 
 .blog__one {
-  outline: 1px solid red;
+  
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
   height: 560px;
-  max-width: 320px;
   position: relative;
   
   @media screen and(min-width:480px) {
     max-width: 480px;
+    width: 100%;
   }
   @media screen and(min-width:768px) {
     max-width: 768px;
@@ -104,63 +104,67 @@ img {
 
 
 }
-.img {
+.img1 {
   
- /*  width: 322px;
-  height: 180px; */
   padding: 0 auto;
-
+  border-radius: 12px;
   &--first {
     display: none;
   }
-  @media screen and (min-width: 400px ) {
-    &--second {
-      display: block;
-      width: 420px;
-      height: 228px;
-      padding-left: 30px;
-      padding-right: 30px;     
-    }
-  }
-
-  @media screen and (min-width: 480px) {
-    &--second {
-      /* display: block;
-      width: 387px;
-      height: 228px; */
-      width: 480px;
-      height: auto;
-      display: block;
-      object-fit: contain; 
-    }
-  }
-  @media screen and (min-width: 768px) {
-    &--second {
-      display: block;
-      width: 387px;
-      height: 228px;
-      border-radius: 12px;
-      padding: 0;
-    }
-  }
-  @media screen and (min-width: 768px) {
-     /*   display: block; */
-    width: 387px;
-    height: 228px;
-    border-radius: 12px;
-  }
-  @media screen and (min-width: 1280px) {
+   @media screen and (min-width: 1280px) {
     &--first {
       display: block;
       width: 367px;
       height: auto;
       padding-top: 48px;
     }
-    &--second {
+  }
+}
+
+.img2 {
+  
+ 
+   padding: 0 auto;
+ 
+   &--Second {
+     display: block;
+   }
+   
+ 
+   @media screen and (min-width: 480px) {
+     &--second {
+       display: block;
+       width: 480px;
+       height: 228px;
+       width: 100%;
+       height: auto;
+      
+     }
+   }
+   @media screen and (min-width: 768px) {
+     &--second {
+       display: block;
+       width: 387px;
+       height: 228px;
+       border-radius: 12px;
+       padding: 0;
+     }
+   }
+   @media screen and (min-width: 768px) {
+     
+     width: 387px;
+     height: 228px;
+     border-radius: 12px;
+   }
+   @media screen and (min-width: 1280px) {
+      &--second {
       display: none;
     }
   }
-}
+  
+  }
+
+
 
 .text {
   width: 692px;
@@ -170,18 +174,6 @@ img {
 }
 
 .text__title {
-/*   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1;
-  color: #ffffff;
-  padding-bottom: 54px; */
-
-  /* width: 288px;
-  height: 56px;
-  left: 16px;
-  top: 0px; */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -240,13 +232,11 @@ img {
 
 
 .text__author--main {
-/*      padding-top: 30px; */
+
   @media screen and(min-width:480px) {
     justify-content: space-between;
     padding-top: 54px;
   }
-
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -259,10 +249,6 @@ img {
 }
 
 .text__author {
-    /*   width: 248px;
-    height: 16px;
-    left: 16px;
-    top: 260px; */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
@@ -400,10 +386,6 @@ img {
 
 }
 .link {
-  /* width: 82px;
-  height: 16px;
-  left: 222px;
-  top: 457px; */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -439,3 +421,54 @@ img {
 }
 }
 
+.pagination__list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination__item {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: pag-anime;
+}
+
+.pagination__item:hover {
+  cursor: pointer;
+}
+
+.pagination__item:nth-child(1) {
+  width: 40px;
+  animation-delay: 0;
+}
+
+.pagination__item:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.pagination__item:nth-child(3) {
+  animation-delay: 1s;
+}
+
+
+@keyframes pag-anime {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #86e543;
+  }
+  40% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
