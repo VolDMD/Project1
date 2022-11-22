@@ -232,6 +232,8 @@ img {
     font-size: 56px;
     line-height: 1;
     color: #FFFFFF;
+    padding-left: 0;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -308,8 +310,9 @@ img {
     font-size: 24px;
     line-height: 100%;
     color: #FFFFFF;
-    padding-top: 80px;
-    padding-left: 40px;
+    padding-top: 116px;
+    padding-left: 0px;
+    padding-bottom: 60px;
   }
 }
 
@@ -335,7 +338,7 @@ img {
     font-weight: 600;
     font-size: 24px;
     line-height: 1;
-    padding-top: 66px;
+    padding-left: 0px;
   }
 }
 
@@ -362,7 +365,9 @@ img {
     font-weight: 400;
     font-size: 24px;
     line-height: 1.17;
+    color: #FFFFFF;
     padding-top: 16px;
+    padding-left: 0;
   }
 }
 
